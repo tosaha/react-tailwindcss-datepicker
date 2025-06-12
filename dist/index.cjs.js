@@ -2543,7 +2543,7 @@ const Datepicker = (props) => {
                 : defaultContainerClassName;
     }, [containerClassName]);
     const popupClassNameOverload = require$$0.useMemo(() => {
-        const defaultPopupClassName = "transition-all ease-out duration-300 absolute z-10 mt-[1px] text-sm lg:text-xs 2xl:text-sm translate-y-4 opacity-0 hidden";
+        const defaultPopupClassName = "transition-all ease-out duration-300 absolute z-10 mt-px text-sm lg:text-xs 2xl:text-sm translate-y-4 opacity-0 hidden";
         return typeof popupClassName === "function"
             ? popupClassName(defaultPopupClassName)
             : typeof popupClassName === "string" && popupClassName !== ""
